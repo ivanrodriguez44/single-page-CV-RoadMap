@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single-Page CV</title>
+    <style>
+        html{
+            font-size: 62.5% /* 1rem = 10px */;
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after{
+            box-sizing: inherit;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1{
+            font-size: 4rem;
+        }
+
+        h2{
+            font-size: 3rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+
+        h1, h2, h3{
+            margin: 0 5rem 0 5rem;
+        }
+
+        .container{
+            width: 90%;
+            max-width: 160rem;
+            border: 2px solid #000;
+            margin: 0 auto;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    
-</body>
+    <div class="container">
+        <header>
+            <hr>
+            <h1 class="my-name">José Iván Rodríguez</h1>
+        </header>
+        <main>
+            <section>
+                <h3 class="section-title">Junior Frontend Developer</h3>
+                <p>123 Your Street</p>
+                <p>Ciudad de México, México. 39000</p>
+            </section>
+            <section>
+                <h3 class="section-title">Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Accessibility</li>
+                    <li>Figma to Design</li>
+                    <li>Responsive Web Design</li>
+                    <li>Technical Writing</li>
+                    <li>Presentation</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="section-title">Education</h3>
+                <h3 class="subtitle"></h3>
+            </section>
+            <section>
+                <h3 class="section-title">Experience</h3>
+                <article>
+                    <h2></h2>
+                </article>
+                <article>
+                    <h2></h2>
+                </article>
+            </section>
+            <section>
+                <h3 class="section-title">Across the Internet</h3>
+                <nav>
+                    <a class="link" href="www.linkedin.com/in/jivandobler" target="_blank">LinkedIn</a>
+                    <a class="link" href="https://github.com/ivanrodriguez44" target="_blank">GitHub</a>
+                </nav>
+            </section>
+        </main>
+    </body>
+</div>
 </html>
