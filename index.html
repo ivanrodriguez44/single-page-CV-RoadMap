@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Single-Page CV</title>
     <style>
+        :root{
+            --main-font: "Open Sans", sans-serif;
+        }
         html{
             font-size: 62.5% /* 1rem = 10px */;
             box-sizing: border-box;
@@ -15,7 +21,8 @@
         }
 
         body{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: var(--main-font);
+            font-size: 1.4rem;
         }
 
         h1{
@@ -23,11 +30,11 @@
         }
 
         h2{
-            font-size: 3rem;
+            font-size: 1.6rem;
         }
 
         h3{
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         h1, h2, h3{
@@ -35,11 +42,19 @@
         }
 
         .container{
-            width: 90%;
+            width: 45%;
             max-width: 160rem;
             border: 2px solid #000;
             margin: 0 auto;
             height: 100vh;
+        }
+
+        .section-title{
+            color: #0dab76;
+            font-weight: 600;
+        }
+        .article-title{
+            color: #1a94eb;
         }
     </style>
 </head>
@@ -51,12 +66,14 @@
         </header>
         <main>
             <section>
-                <h3 class="section-title">Junior Frontend Developer</h3>
+                <h2 class="section-title">Junior Frontend Developer</h2>
                 <p>123 Your Street</p>
-                <p>Ciudad de México, México. 39000</p>
+                <p>Acapulco, Gro. 39000</p>
+                <a href="tel:123 476-7890">(123) 476-7890</a>
+                <a href="email: no_reply@example.com">ivanrodriguez_no_reply@example.com</a>
             </section>
             <section>
-                <h3 class="section-title">Skills</h3>
+                <h2 class="section-title">Skills</h2>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -69,20 +86,35 @@
                 </ul>
             </section>
             <section>
-                <h3 class="section-title">Education</h3>
-                <h3 class="subtitle"></h3>
+                <h2 class="section-title">Education</h2>
+                <article>
+                    <h3 class="article-title">Tecnológico Nacional de México Campus Acapulco - Computer Science Engineer Bachelor's Degree</h3>
+                    <p class="date">August 2021 to June 2026</p>
+                    <ul class="achiev-list">
+                        <li></li>
+                    </ul>
+                        <ul class="skills-list">
+                    </ul>
+                </article>
             </section>
             <section>
-                <h3 class="section-title">Experience</h3>
+                <h2 class="section-title">Experience</h2>
                 <article>
-                    <h2></h2>
+                    <h3 class="article-title">Ayuntamiento de Acapulco - Social Service Provider</h3>
+                    <p class="date">December 2024 to June 2025</p>
+                    <ul class="achiev-list">
+                        <li></li>
+                    </ul>
+                    <ul class="skills-list">
+
+                    </ul>
                 </article>
                 <article>
-                    <h2></h2>
+                    <h3 class="article-title">Chaindrenciales - Frontend Developer</h3>
                 </article>
             </section>
             <section>
-                <h3 class="section-title">Across the Internet</h3>
+                <h2 class="section-title">Across the Internet</h2>
                 <nav>
                     <a class="link" href="www.linkedin.com/in/jivandobler" target="_blank">LinkedIn</a>
                     <a class="link" href="https://github.com/ivanrodriguez44" target="_blank">GitHub</a>
